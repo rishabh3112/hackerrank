@@ -1,19 +1,32 @@
-public class Solution {
-	public static void main(String[] args) {
-        // Create a Scanner object to read input from stdin.
-		Scanner scan = new Scanner(System.in); 
-		
-		// Read a full line of input from stdin and save it to our variable, inputString.
-		String inputString = scan.nextLine(); 
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-		// Close the scanner object, because we've finished reading 
-        // all of the input from stdin needed for this challenge.
-		scan.close(); 
-      
-		// Print a string literal saying "Hello, World." to stdout.
-		System.out.println("Hello, World.");
-      
-	    // TODO: Write a line of code here that prints the contents of inputString to stdout.
-        System.out.println(inputString);
-	}
+public class Solution {
+	
+    public static void main(String[] args) {
+        int i = 4;
+        double d = 4.0;
+        String s = "HackerRank ";
+		
+		Scanner scan = new Scanner(System.in);
+		/* Declare second integer, double, and String variables. */
+        int j = scan.nextInt();
+        double e = scan.nextDouble();
+        String t = scan.nextLine();
+        t = scan.nextLine();
+        /* Read and save an integer, double, and String to your variables.*/
+        // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
+        
+        /* Print the sum of both integer variables on a new line. */
+        System.out.println(i+j);
+        /* Print the sum of the double variables on a new line. */
+		System.out.println(d+e);
+        /* Concatenate and print the String variables on a new line; 
+        	the 's' variable above should be printed first. */
+		System.out.println(s+t);
+		scan.close();
+    }
 }
